@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Mon-CV'`, () => {
+  it(`should have as title 'Angular-TP'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Mon-CV');
+    expect(app.title).toEqual('Angular-TP');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Mon-CV app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Angular-TP app is running!');
   });
 });
